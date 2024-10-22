@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    /* Modelled after iPhone SE */
+    border: 1px solid white;
+    height: 667px;
+    width: 375px;
+}
+
+.header{
+    height: 7.25%;
+    width: 100%;
+    background-color: lightpink;
+}
+
+.history{
+    height: 21.75%;
+    width: 100%;
+    background-color: lightyellow;
+}
+
+.display{
+    height: 21%;
+    width: 100%;
+    background-color: lightseagreen;
+}
+
+.buttons{
+    height: 50%;
+    width: 100%;
+    background-color: lightblue;
+}
+
