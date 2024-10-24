@@ -101,6 +101,23 @@ body{
     background-color: black;
 }
 
+#percentage-btn,
+#resize-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey);
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+}
+
+#percentage-btn:hover,
+#resize-btn:hover{
+    opacity: 0;
+}
+
+
 .button-grid-container{
     padding: 15px;
     display: grid;
