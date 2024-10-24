@@ -9,7 +9,13 @@
 </head>
 <body>
     <div class="calculator">
-        <header class="header"></header>
+        <header class="header">
+            <img class="header-close-icon" src="./images/icons/header-close-icon.png" alt="">
+            <div class="calculator-mode"> Calculator </div>
+            <div class="converter-mode"> Converter </div>
+            <img class="menu-icon" src="./images/icons/menu-three-dots.png" alt="">
+
+        </header>
         <section class="history"></section>
         <section class="display">
             <div class="current-input"></div>
@@ -17,6 +23,42 @@
         </section>
         <section class="buttons">
             <div class="button-grid-container">
+                <!-- Row 1 -->
+                <div class="calc-input operator" id="clear-btn">C</div>
+                <div class="calc-input operator" id="del-btn">
+                    <img class="del-btn-icon" src="./images/icons/del-btn.png" alt="">
+                </div>
+                <div class="calc-input operator" id="percentage-btn">%</div>
+                <div class="calc-input operator" id="divide-btn">&divide;</div>
+
+                <!-- Row 2 -->
+                <div class="calc-input num" id="num-7">7</div>
+                <div class="calc-input num" id="num-8">8</div>
+                <div class="calc-input num" id="num-9">9</div>
+                <div class="calc-input operator" id="multiply-btn">&times;</div>
+
+                <!-- Row 3 -->
+                <div class="calc-input num" id="num-4">4</div>
+                <div class="calc-input num" id="num-5">5</div>
+                <div class="calc-input num" id="num-6">6</div>
+                <div class="calc-input operator" id="subtract-btn">&minus;</div>
+
+
+                <!-- Row 4 -->
+                <div class="calc-input num" id="num-1">1</div>
+                <div class="calc-input num" id="num-2">2</div>
+                <div class="calc-input num" id="num-3">3</div>
+                <div class="calc-input operator" id="addition-btn">&plus;</div>
+
+
+                <!-- Row 5 -->
+                <div class="calc-input operator" id="resize-btn">
+                    <img class="resize-btn-icon"  src="images/icons/resize-btn-icon.png" alt="">
+                </div>
+                <div class="calc-input num" id="num-0">0</div>
+                <div class="calc-input num" id="point">&dot;</div>
+                <div class="calc-input operator" id="equals-btn">&equals;</div>
+
 
             </div>
         </section>

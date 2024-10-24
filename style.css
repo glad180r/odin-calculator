@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --orange:#ED8114;
+    --grey: rgb(36, 36, 36);
+    
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Encode Sans Condensed", sans-serif;
+    font-weight: 100;
 }
 
 body{
@@ -15,17 +25,37 @@ body{
 }
 
 .calculator{
-    /* Modelled after iPhone SE */
-    border: 1px solid white;
+    border: 2px solid white;
     height: 667px;
-    width: 375px;
+    width: 350px;
 }
 
 .header{
     height: 7.25%;
     width: 100%;
-    background-color: lightpink;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
 }
+
+.calculator-mode,
+.converter-mode{
+    font-weight: 400;
+}
+
+.converter-mode{
+    color: gray;
+}
+
+.header-close-icon,
+.menu-icon{
+    height: 70%;
+}
+
+
 
 .history{
     height: 21.75%;
@@ -34,14 +64,58 @@ body{
 }
 
 .display{
-    height: 21%;
+    height: 11%;
     width: 100%;
     background-color: lightseagreen;
 }
 
 .buttons{
-    height: 50%;
+    height: 60%;
     width: 100%;
-    background-color: lightblue;
+    background-color: black;
+}
+
+.button-grid-container{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+    font-size: 1.5rem;
+}
+
+.del-btn-icon,
+.resize-btn-icon{
+    height: 60%;
+}
+
+.calc-input{
+    border: none;
+    background-color:var(--grey);
+    color: var(--orange);
+
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+.operator{
+    font-weight: bold;
+}
+
+
+.num{
+    color: white;
+}
+
+#equals-btn{
+    background-color: var(--orange);
+    color: white;
 }
 
