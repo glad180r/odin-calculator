@@ -131,8 +131,30 @@ body{
     font-weight: 400;
 }
 
+.num:hover{
+    background-color: var(--grey);
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.num:active{
+    background-color: var(--orange);
+    color: var(--grey);
+}
+
 .operator{
     font-weight: bold;
+}
+
+.operator:hover{
+    background-color: var(--orange);
+    color: var(--grey);
+    cursor: pointer;
+}
+
+.operator:active{
+    background-color: var(--grey);
+    color: var(--orange);
 }
 
 
@@ -143,5 +165,28 @@ body{
 #equals-btn{
     background-color: var(--orange);
     color: white;
+}
+
+#equals-btn:hover{
+    background-color: rgba(128, 128, 128, 0.573);
+    color: white;
+    cursor: pointer;
+}
+
+#equals-btn:active{
+    background-color: var(--orange);
+    color: var(--grey);
+}
+
+
+#resize-btn:hover,
+#del-btn:hover{
+    background-color: rgba(128, 128, 128, 0.573);
+    cursor: pointer;
+}
+
+#resize-btn:active,
+#del-btn:active{
+    background-color: var(--grey);
 }
 
